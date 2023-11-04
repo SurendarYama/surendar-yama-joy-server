@@ -1,0 +1,30 @@
+{
+  "name": "surendar-yama-joy-server",
+  "version": "1.0.0",
+  "description": "wrapper for expressjs",
+  "main": "index.js",
+  "type": "module",
+  "exports": {
+    "import": "./index.js",
+    "require": "./index.cjs"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "express": "^4.18.2"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SurendarYama/surendar-yama-joy-server.git"
+  },
+  "keywords": [
+    "surendar-yama-joy-server"
+  ],
+  "author": "Surendar Yama",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/SurendarYama/surendar-yama-joy-server/issues"
+  },
+  "homepage": "https://github.com/SurendarYama/surendar-yama-joy-server#readme"
+}
