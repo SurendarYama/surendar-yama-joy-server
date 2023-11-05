@@ -20,11 +20,18 @@ export const bootApp = function () {
     }
     // 🧜🏽‍♂️ register endpoint
     if (action.type === "🧜🏽‍♂️") {
+      if (action.payload.middlewares) {
+        app[action.payload.method](
+          action.payload.path,
+          ...action.payload.middlewares.before,
+          action.payload.controller,
+          ...action.payload.middlewares.after
+        );
+        return;
+      }
       app[action.payload.method](
         action.payload.path,
-        ...action.payload.middlewares.before,
-        action.payload.controller,
-        ...action.payload.middlewares.after
+        action.payload.controller
       );
       return;
     }
