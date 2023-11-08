@@ -11,11 +11,12 @@ const bootApp = function () {
     // 👑 app.set method in express
     if (action.type === "👑") {
       app.set(...action.payload);
+      return;
     }
     // 👽 app listen on payload.port
     if (action.type === "👽") {
       const PORT = action.payload.port;
-      if (action.payload.port) {
+      if (PORT) {
         app.listen(PORT, () =>
           console.log(`Server is running on port ${PORT}`)
         );
