@@ -1,6 +1,6 @@
 {
   "name": "surendar-yama-joy-server",
-  "version": "1.0.02",
+  "version": "1.0.03",
   "description": "wrapper for expressjs",
   "main": "index.js",
   "type": "module",

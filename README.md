@@ -7,6 +7,7 @@
     * 👽 app listen
     * 🧜🏽‍♂️ register endpoint
     * 🦕 register middleware
+    * 👑 app.set method in express
     */
 
     import { bootApp } from "surendar-yama-joy-server";

@@ -8,6 +8,10 @@ const bootApp = function () {
       app.use(...action.payload.middlewares);
       return;
     }
+    // 👑 app.set method in express
+    if (action.type === "👑") {
+      app.set(...action.payload);
+    }
     // 👽 app listen on payload.port
     if (action.type === "👽") {
       const PORT = action.payload.port;
